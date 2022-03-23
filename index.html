@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confetti effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>We Just Hit 100 Subs On Yt 🎉🥳</h1>
+      <p>
+        Thank u everyone for your support, And we had finally reached 100
+        subscribers thank u so much to my yt family
+      </p>
+      <h4>
+        If u are not subscribed.
+        <a href="https://www.youtube.com/channel/UCW7IRRo5Nmz92IHq07QAmTQ"
+          >Click here!</a
+        >
+      </h4>
+    </div>
+    <script src="./confetti.js"></script>
+
+    <script>
+      //lets start the confetti functnality
+      //first we will create function
+      const start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000);
+      };
+
+      const stop = () => {
+        setTimeout(function () {
+          confetti.stop();
+        }, 5000);
+      };
+
+      // i am writing these start and stop here bcs it will tell the compiler to start the function
+      start();
+      stop();
+    </script>
+  </body>
+</html>
